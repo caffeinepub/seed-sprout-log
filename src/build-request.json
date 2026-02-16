@@ -1,0 +1,52 @@
+{
+  "kind": "build_request",
+  "title": "Add soil type filter for plant entries list",
+  "projectName": "Seed Sprout Log",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Add a UI control in the plant entry list screen that lets the user filter the displayed seed/planting entries by soil type.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "filter by soil type"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A soil type filter control is visible on the main entries list view (where \"Your Seeds\" and the grid of entry cards are shown).",
+        "The filter options are derived from the current set of loaded entries’ soilType values (unique, non-empty), plus an \"All soil types\" option.",
+        "Selecting a specific soil type updates the UI to show only entries whose soilType matches the selected value.",
+        "Selecting \"All soil types\" shows all entries again.",
+        "When the filter is active, the count text (e.g., \"Tracking X seed entries\") reflects the number of entries currently shown (post-filter).",
+        "If there are no entries, the existing empty state remains unchanged and no filter is shown (or it is disabled in a sensible way).",
+        "All user-facing text related to the filter is in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or anything in frontend/src/components/ui (compose existing UI components instead).",
+    "Keep filtering client-side using the already-fetched entries (no new backend APIs required)."
+  ],
+  "nonGoals": [
+    "Adding backend endpoints for filtered queries.",
+    "Adding additional filters (e.g., germination status, date ranges) beyond soil type."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

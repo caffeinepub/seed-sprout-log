@@ -1,0 +1,38 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-16T22:02:18.194Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-9",
+        "summary": "Add a UI control in the plant entry list screen that lets the user filter the displayed seed/planting entries by soil type.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/plant-entries/PlantEntryList.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/plant-entries/PlantEntryList.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/plant-entries/PlantEntryList.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

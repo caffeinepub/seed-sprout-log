@@ -1,0 +1,14 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-16T22:02:18.190Z",
+  "summary": "REQ-9 appears fully implemented in PlantEntryList: a soil type dropdown filter is shown on the main entries list, options are derived from unique non-empty soilType values plus an \"All soil types\" option, selecting an option filters the displayed entries client-side, and the tracking count reflects the filtered list. The filter is not shown when there are no entries, preserving the empty state, and all related text is in English.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.9,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/plant-entries/PlantEntryList.tsx",
+    "project_state.json"
+  ]
+}

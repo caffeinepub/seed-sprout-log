@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "App to track seed starting dates, germination dates, soil type, and daily light received for planted seeds.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-coherent-distinctive-visual-theme-for-the-app-colors-typography-spacing-component-styling-appropriate-for-gardening-seed-starting-and-apply-it-consistently-across-all-screens-using-tailwind-existing-ui-components-do-not-use-a-blue-purple-default-theme",
+      "title": "Create a coherent, distinctive visual theme for the app (colors, typography, spacing, component styling) appropriate for gardening/seed-starting, and apply it consistently across all screens using Tailwind + existing UI components (do not use a blue/purple default theme).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-main-ui-to-manage-seed-planting-entries-1-a-list-view-showing-key-fields-name-start-date-germination-status-date-soil-type-daily-light-2-an-add-entry-form-and-3-an-edit-entry-workflow",
+      "title": "Build the main UI to manage seed/planting entries: (1) a list view showing key fields (name, start date, germination status/date, soil type, daily light), (2) an add entry form, and (3) an edit entry workflow.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-side-data-fetching-and-mutations-using-react-query-for-all-seed-planting-crud-operations-including-loading-and-error-states-for-list-and-form-actions",
+      "title": "Implement client-side data fetching and mutations using React Query for all seed/planting CRUD operations, including loading and error states for list and form actions.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-ux-helpers-validation-and-user-friendly-input-controls-for-dates-and-numeric-daily-light-e-g-require-non-empty-name-valid-start-date-daily-light-must-be-a-non-negative-number-all-user-facing-strings-must-be-in-english",
+      "title": "Add basic UX helpers: validation and user-friendly input controls for dates and numeric daily light (e.g., require non-empty name, valid start date, daily light must be a non-negative number). All user-facing strings must be in English.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-detail-view-or-expandable-row-for-an-entry-that-displays-all-recorded-information-including-optional-germination-date-and-provides-edit-delete-actions",
+      "title": "Add a simple detail view (or expandable row) for an entry that displays all recorded information (including optional germination date) and provides edit/delete actions.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-a-small-set-of-cohesive-static-visual-assets-to-support-the-app-theme-e-g-logo-mark-and-subtle-background-illustrations-and-render-them-from-frontend-static-assets",
+      "title": "Generate and include a small set of cohesive static visual assets to support the app theme (e.g., logo/mark and subtle background/illustrations) and render them from frontend static assets.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-ui-control-in-the-plant-entry-list-screen-that-lets-the-user-filter-the-displayed-seed-planting-entries-by-soil-type",
+      "title": "Add a UI control in the plant entry list screen that lets the user filter the displayed seed/planting entries by soil type.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Track seed starting date for each seed/planting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Track germination date/status for each seed/planting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Record soil type used for each seed/planting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Record daily light received for each seed/planting",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend data model and persistence for seed/planting entries with fields: plant/seed name, seed starting date, germination date (optional), soil type, and daily light received (numeric, e.g., hours/day). Provide stable storage so entries persist across canister upgrades.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Provide backend CRUD APIs for seed/planting entries: create, list (all), get by id, update, and delete. Include derived/returned germination status (e.g., germinated = germinationDate is set) in responses or make it straightforward for the frontend to compute.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add a way to filter seed/planting entries by soil type in the UI (e.g., dropdown/select or chips)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Seed Sprout Log",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

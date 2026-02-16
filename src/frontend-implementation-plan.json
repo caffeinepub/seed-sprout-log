@@ -1,0 +1,27 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add soil type filter to plant entries list",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Add a client-side soil type filter control to the main plant entries list and update the shown entries + count accordingly.",
+      "acceptanceCriteria": [
+        "A soil type filter control is visible on the main entries list view (where \"Your Seeds\" and the grid of entry cards are shown).",
+        "The filter options are derived from the current set of loaded entries’ soilType values (unique, non-empty), plus an \"All soil types\" option.",
+        "Selecting a specific soil type updates the UI to show only entries whose soilType matches the selected value.",
+        "Selecting \"All soil types\" shows all entries again.",
+        "When the filter is active, the count text (e.g., \"Tracking X seed entries\") reflects the number of entries currently shown (post-filter).",
+        "If there are no entries, the existing empty state remains unchanged and no filter is shown (or it is disabled in a sensible way).",
+        "All user-facing text related to the filter is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/plant-entries/PlantEntryList.tsx",
+          "operation": "modify",
+          "description": "Implement client-side soil type filtering using already-fetched entries: add local state for selected soil type, derive unique non-empty soilType options from loaded entries, render a filter control near the \"Your Seeds\" header (only when entries exist), filter the entries rendered in the grid, and update the tracking/count text to reflect the filtered list size. Use existing shadcn-ui primitives already used on the screen (e.g., Card/Button/typography styling conventions) to keep the UI consistent; verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

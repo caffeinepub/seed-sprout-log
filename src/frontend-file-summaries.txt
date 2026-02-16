@@ -1,0 +1,11 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system defining earth-tone gardening theme (soil browns, leaf greens) for both light and dark modes with custom typography and animations.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with Inter font family, custom garden-themed colors, border radii, shadows, and sprout animation keyframes.",
+  "frontend/src/App.tsx": "Main application component with header featuring seedling logo, background pattern, plant entry list, and footer with attribution.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all plant entry CRUD operations including list, get, create, update, and delete with automatic cache invalidation.",
+  "frontend/src/utils/time.ts": "Utility functions for converting between date strings and backend Time (bigint nanoseconds), formatting dates, and calculating days between dates.",
+  "frontend/src/components/plant-entries/PlantEntryList.tsx": "Main list view component displaying all plant entries in a grid with add button, soil type filter dropdown, empty state, filtered results handling, and detail dialog management.",
+  "frontend/src/components/plant-entries/PlantEntryCard.tsx": "Individual plant entry card component showing name, planting date, germination status, light hours, and soil type with hover effects.",
+  "frontend/src/components/plant-entries/PlantEntryForm.tsx": "Reusable form component for creating and editing plant entries with validation for all fields including name, soil type, dates, and daily light hours.",
+  "frontend/src/components/plant-entries/PlantEntryDetail.tsx": "Detail view dialog displaying complete plant entry information with edit and delete actions, including confirmation dialog for deletion."
+}

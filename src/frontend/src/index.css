@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        /* Earth tones - warm soil browns and natural greens */
+        --background: 0.98 0.01 60;
+        --foreground: 0.25 0.02 60;
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 60;
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 60;
+        /* Rich soil brown as primary */
+        --primary: 0.45 0.08 50;
+        --primary-foreground: 0.98 0.01 60;
+        /* Leaf green as secondary */
+        --secondary: 0.88 0.12 145;
+        --secondary-foreground: 0.25 0.02 60;
+        --muted: 0.94 0.01 60;
+        --muted-foreground: 0.55 0.02 60;
+        /* Fresh sprout green as accent */
+        --accent: 0.75 0.15 140;
+        --accent-foreground: 0.98 0.01 60;
+        --destructive: 0.55 0.20 25;
+        --destructive-foreground: 0.98 0.01 60;
+        --border: 0.88 0.02 60;
+        --input: 0.88 0.02 60;
+        --ring: 0.45 0.08 50;
+        --chart-1: 0.65 0.15 140;
+        --chart-2: 0.70 0.12 100;
+        --chart-3: 0.55 0.10 80;
+        --chart-4: 0.60 0.08 50;
+        --chart-5: 0.75 0.15 160;
+    }
+
+    .dark {
+        --background: 0.18 0.02 60;
+        --foreground: 0.95 0.01 60;
+        --card: 0.22 0.02 60;
+        --card-foreground: 0.95 0.01 60;
+        --popover: 0.20 0.02 60;
+        --popover-foreground: 0.95 0.01 60;
+        --primary: 0.65 0.12 140;
+        --primary-foreground: 0.18 0.02 60;
+        --secondary: 0.30 0.03 60;
+        --secondary-foreground: 0.95 0.01 60;
+        --muted: 0.28 0.02 60;
+        --muted-foreground: 0.65 0.01 60;
+        --accent: 0.55 0.15 145;
+        --accent-foreground: 0.95 0.01 60;
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.95 0.01 60;
+        --border: 0.30 0.02 60;
+        --input: 0.30 0.02 60;
+        --ring: 0.65 0.12 140;
+        --chart-1: 0.65 0.15 140;
+        --chart-2: 0.70 0.12 100;
+        --chart-3: 0.55 0.10 80;
+        --chart-4: 0.60 0.08 50;
+        --chart-5: 0.75 0.15 160;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: 600;
+    }
+}
+
